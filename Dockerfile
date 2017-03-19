@@ -8,10 +8,10 @@ RUN apt-get update -y
 RUN apt-get install -y wget
 
 #Install R 
-RUN apt-get install r-base
+RUN apt-get install -y r-base
 
 #Install R-studio - https://www.rstudio.com/products/rstudio/download-server/
-RUN apt-get install gdebi-core
+RUN apt-get install -y gdebi-core
 RUN wget https://download2.rstudio.org/rstudio-server-1.0.136-amd64.deb
 RUN gdebi rstudio-server-1.0.136-amd64.deb
 
