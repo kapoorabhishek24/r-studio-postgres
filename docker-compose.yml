@@ -1,0 +1,17 @@
+rstudio:
+  image: r-studio-postgres
+  volumes: 
+  - <PWD>:/home
+  links:
+  - postgres:db
+  environment:
+  - any environment variables
+  restart: always
+
+postgres:
+ image: postgres
+ volumes:
+ - <PWD>:/home/postgres
+ environment:
+ - Any variables
+ restart: always
