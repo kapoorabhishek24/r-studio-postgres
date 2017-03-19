@@ -1,2 +1,2 @@
-# pecan-docker
-Dockering the PEcAn Technology Stack
+# PEcAn
+Dockering the PEcAn Technology Stack.
